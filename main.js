@@ -4,6 +4,7 @@ Video by Brad Traversy
 JavaScript Crash Course For Beginners
 https://youtu.be/hdI2bqOjy3c?t=4228 
 
+SELECTION:
 Single element
 console.log(document.getElementById("my-form"));
 console.log(document.querySelector("h1"));
@@ -18,4 +19,19 @@ const items = document.querySelectorAll("item");
 items.forEach((item) => console.log(item));
 Start at 1:10:29
 
+MANIPULATION:
+
+const ul = document.querySelector('items');
+
+ul.remove();
+ul.lastElementChild.remove();
+ul.firstElementChild.textContent = 'Hello';
+ul.children[1].innerText = 'Brad';
+ul.lastElementChild.innerHTML = '<h1>Hello</h1>';
+
+const btn = document.querySelector('.btn');
+btn.style.background = 'red';
+
  */
+
+const btn = document.querySelector(".btn");
